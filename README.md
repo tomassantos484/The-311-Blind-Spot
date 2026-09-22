@@ -33,7 +33,7 @@ The 311 Blind Spot keeps those distinctions visible. Its **Service Gap Index, SG
 | `rat_sightings.csv` | 50,954 complaint records; Jan 1, 2025–Sep 17, 2026 | One unique 311 ticket, not one rat or incident |
 | `restaurant_inspections.csv` | 158,083 violation rows; Jan 2, 2025–Sep 16, 2026 | 26,114 distinct CAMIS establishment IDs; 44,447 establishment/date visit proxies before cleaning |
 
-The two files were supplied at the hackathon. The optional retrieval script uses a pinned copy of those event files from the reference team's repository. Their counts and core results match this team's saved notebook outputs; byte identity with the original team uploads has not been confirmed. See [input provenance](config/input-manifest.json). No population dataset is used in our solution.
+The two files were supplied at the hackathon. The optional retrieval script uses a pinned copy of those event files from the reference team's repository. Their counts and core results match this team's saved notebook outputs; byte identity with the original team uploads has not been confirmed. No population dataset is used in our solution.
 
 ```mermaid
 flowchart TD
