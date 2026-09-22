@@ -112,18 +112,12 @@ This prepares files only. Follow the runbook (COMING SOON) for login, schema cre
 
 ## Repository guide
 
-| Path | Purpose |
-|---|---|
-| `notebooks/` | Unchanged original hackathon notebooks and saved outputs |
-| `resources/generated/` | Clean, isolated deployment copies; regenerate from config |
-| `databricks.yml` | Generated pipeline/volume bundle |
-| `scripts/prepare_bundle.py` | Namespace, snapshot/window configuration, output removal, metadata corrections |
-| `scripts/audit_snapshot.py` | Independent local evidence checks; does not execute Spark |
-| `scripts/prepare_serving.py` | Packages actual team UI exports after the data build |
-| `config/` | Example settings, pinned inputs, generated provenance |
-| `docs/` | Evidence, inventory, runbook, and validation record |
-| `serving/` | Dashboard/Genie preservation and verification instructions |
-| `tests/` | Source-SQL boundary fixtures and packaging checks |
+| Path                        | Purpose                                                                                                         |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `notebooks/01_ingest.ipynb` | Loads the source CSVs, creates bronze tables, and audits record counts and data quality.                        |
+| `notebooks/02_silver.ipynb` | Cleans and standardizes records, handles ZIP geography, and creates silver tables.                              |
+| `notebooks/03_gold.ipynb`   | Calculates SGI-30, builds ZIP and borough summaries, and creates analytical tables and interpretation metadata. |
+| `README.md`                 | Explains the project, methodology, findings, limitations, and setup requirements.                               |
 
 ## Limits and next steps
 
